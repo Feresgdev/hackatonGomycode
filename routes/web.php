@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Test;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\LogoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +21,8 @@ Route::get('/', function () {
 });
 
 Route::get('/test', [Test::class, 'test']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post("/logout", [LogoutController::class, "Logout"])->name("logout");
+Route::get("/user/{user}/profile", [UserController::class, "Profile"]);
