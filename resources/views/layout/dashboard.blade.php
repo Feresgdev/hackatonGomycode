@@ -3,6 +3,7 @@
 
 <head>
     @include('layout.styles')
+
 </head>
 
 <body class="  ">

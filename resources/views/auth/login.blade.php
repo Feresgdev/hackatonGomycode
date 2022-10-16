@@ -81,10 +81,6 @@
                                                 <label class="form-check-label" for="remember">
                                                     {{ __('Remember Me') }}
                                                 </label>
-
-                                                <a href="{{ route('register') }}"> Not a memeber yet ? </a>
-
-
                                             </div>
                                         </div>
                                     </div>
